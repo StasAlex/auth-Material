@@ -1,3 +1,4 @@
+import { LoginService } from 'src/app/services/login.service';
 import { LoginComponent } from './components/login/login.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -45,7 +46,7 @@ import { MatInputModule } from '@angular/material';
     FormsModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

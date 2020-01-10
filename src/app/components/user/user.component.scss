@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-content{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-data{
+  margin-bottom: 20px;
+}

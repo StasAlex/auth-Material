@@ -1,6 +1,7 @@
-
 <div class="container">
   <!-- {{user$ | async | json}} -->
-  <div class="text-center">Hello, {{(user$ | async)?.email}} </div>
-  <button color="primary" mat-raised-button type="submit" routerLink="/home" (click)="logout()">LogOut</button>
+  <div class="user-content">
+    <div class="user-data text-center">Hello, {{(user$ | async)?.email}} </div>
+    <button color="primary" mat-raised-button type="submit" routerLink="/home" (click)="logout()">LogOut</button>
+  </div>
 </div>

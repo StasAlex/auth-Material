@@ -22,7 +22,9 @@ export class LoginService {
   loginUser(email, password): Observable<User> {
     return from(
       this.afAuth.auth.signInWithEmailAndPassword(email, password)
-    ).pipe(pluck('user'));
+    ).pipe(
+      pluck('user')
+      );
   }
 
   logOut(): Observable<void> {

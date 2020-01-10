@@ -12,8 +12,14 @@
     </button>
   </mat-form-field>
   <div class="justify-content-between">
-<button color="primary" mat-raised-button type="submit" [disabled]="!loginForm.valid">Login</button>
-<button color="primary" mat-raised-button (click)="clearFormFields()">Clear Form</button>
+    <button color="primary"
+    mat-raised-button
+    type="submit"
+    [disabled]="!loginForm.valid"
+    >
+    Login
+  </button>
+    <button color="primary" mat-raised-button (click)="clearFormFields()">Clear Form</button>
   </div>
 
 </form>
