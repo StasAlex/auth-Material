@@ -16,15 +16,17 @@ export class LoginService {
     }
 
   getUser(): Observable<User> {
-    return this.afAuth.user;
+    const user = this.afAuth.user;
+    return user;
   }
 
-  loginUser(email, password): Observable<User> {
-    return from(
+  loginUser(email: string, password: string): Observable<User> {
+    const user = from(
       this.afAuth.auth.signInWithEmailAndPassword(email, password)
     ).pipe(
       pluck('user')
-      );
+    );
+    return user;
   }
 
   logOut(): Observable<void> {

@@ -1,3 +1,4 @@
+import { async } from '@angular/core/testing';
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
 import { Router } from '@angular/router';
@@ -23,7 +24,8 @@ export class UserComponent implements OnInit {
     this.user$ = this.loginService.getUser();
   }
   logout(): void {
-    this.loginService.logOut().subscribe(
+    this.loginService.logOut()
+    .subscribe(
       () => {
         this.router.navigate(['/home']);
       }

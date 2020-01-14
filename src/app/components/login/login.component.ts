@@ -48,6 +48,7 @@ export class LoginComponent implements OnInit {
       .subscribe(
         () => {
           this.router.navigateByUrl('/user');
+          console.log(this.loginForm.value.email);
         },
         ({ message }) => {
           alert(message);
