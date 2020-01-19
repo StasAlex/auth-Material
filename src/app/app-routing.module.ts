@@ -4,6 +4,7 @@ import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInService, AuthOutService } from './services/auth-guard.service';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -18,12 +19,7 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
-  },
-
-  {
-    path: 'logout',
-    component: HomeComponent,
+    component: LoginComponent,
     canActivate: [AuthOutService]
   },
   {
@@ -31,7 +27,11 @@ const routes: Routes = [
     component: UserComponent,
     canActivate: [AuthInService]
   },
-
+  {
+    path: 'register',
+    component: RegisterComponent,
+    canActivate: [AuthOutService]
+  }
 ];
 
 

@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserComponent } from './components/user/user.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { RegisterComponent } from './components/register/register.component';
 
 import { environment } from '../environments/environment';
 
@@ -30,7 +31,8 @@ import { MatCardModule } from '@angular/material/card';
     NavigationComponent,
     HomeComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

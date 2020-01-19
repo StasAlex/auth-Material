@@ -47,3 +47,6 @@ Thumbs.db
 
 # notes
 note.js
+
+#firebase data
+/environments/firebase.config.ts

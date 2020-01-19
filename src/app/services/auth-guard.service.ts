@@ -21,7 +21,7 @@ export class AuthOutService implements CanActivate {
         map((user: User) => !user),
         tap((isOut: boolean) => {
           if (!isOut) {
-            this.router.navigate(['/login']);
+            this.router.navigate(['/user']);
           }
         })
       );
